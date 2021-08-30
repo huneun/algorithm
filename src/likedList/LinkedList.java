@@ -6,6 +6,7 @@ public class LinkedList {
 		// TODO Auto-generated method stub
 		LineUp<String> lineUp = new LineUp<String>();
 		
+		//console ¾ÈÂïÈû È®ÀÎ¿ä¸Á
 		lineUp.addPerson(" î");
 		lineUp.addPerson("¸Ş¸®");
 		lineUp.addPerson("»ç¶ó");
