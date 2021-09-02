@@ -1,6 +1,5 @@
 package linkedList2;
 
-import org.w3c.dom.Node;
 
 public class BilliardBall<T> {
 	
