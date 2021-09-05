@@ -5,15 +5,21 @@ public class LinkedListMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		BilliardBall<Integer> billiardBall = new BilliardBall<Integer>();
+		BilliardBall<String> billiardBall = new BilliardBall<String>();
 		
-		billiardBall.addBall(1);
-		billiardBall.addBall(2);
-		billiardBall.addBall(5);
-		billiardBall.addBall(7);
-
+		billiardBall.addHouse("»¡°£");
 		
 		billiardBall.printAll();
+
+		
+		
+//		billiardBall.addBall(1);
+//		billiardBall.addBall(2);
+//		billiardBall.addBall(5);
+//		billiardBall.addBall(7);
+//
+//		
+//		billiardBall.printAll();
 		
 		
 //		BilliardBall<Integer> billiardBall = new BilliardBall<Integer>();

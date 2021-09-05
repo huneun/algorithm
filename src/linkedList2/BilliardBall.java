@@ -3,48 +3,52 @@ package linkedList2;
 
 public class BilliardBall<T> {
 	
-	Ball<T> firstBall = null;
-	//생각하자 생각
-	//필요한 변수,역할 
-	//변수1 -> 객체 생성 객체의 맴버변수로 자기 자신을 선언하여 객체의 시그니쳐 변수를 만들고 이것은 인스턴스하여 이 객체를 생성할 때 나타낼수 있는 유일 무이한 값이되어야 하는 주소 역할을 수행한다. 
-	//변수2 -> 데이터를 받을 변수를 맴버변수로 한다. 
+	House first = null;
 	
-	
-	public class Ball<T>{
+	public class House<T> {
 		
-		Ball<T> address;
-		T ballNumber;
+		House address;
+		T color;
 		
-		public Ball(T ballNumber) {
-			this.ballNumber = ballNumber;
+		public House(T color) {
+			this.color = color;
 		}
-
+		
 	}
 	
-	//이다음으로 이객체의 생성을 담당할 메소드가 필요하다.
-	
-	public void addBall(T ballNumber) {
-		if(firstBall == null) {
-			firstBall = new Ball<T>(ballNumber);
+	public void addHouse(T color) {
+		
+		if(first == null) {
+			first = new House<T>(color);
 		}else {
-			Ball<T> newBall = this.firstBall;
-			while(newBall.address != null) {
-				newBall = newBall.address;
+			House<T> house = first;
+			while(house.address != null) {
+				house = house.address;
 			}
-			newBall.address = new Ball<T>(ballNumber);
+			house.address = new House<T>(color);
 		}
+	
 	}
 	
 	public void printAll() {
-		if(firstBall != null) {
-			Ball<T> ball = this.firstBall;
-			System.out.println("첫번째 공은 "+ball.ballNumber+"다음은 순서대로 ");
-			while(ball.address != null) {
-				ball = ball.address;
-				System.out.println(ball.ballNumber + "번 공");
-			}		
-		}
+		
+		if(first != null) {
+			System.out.println("첫번 째 집의 색깔은 "+ first.color + "이다.");
+			House<T> house = first;
+			if(house.address == null) {
+				System.out.println("다음 집은 없다.");
+				return;
+			}
+			System.out.println("다음으로");
+			while(house.address != null) {
+				house = house.address;
+				System.out.println(house.color + "색");
+			}	
+			System.out.println("이 있다.");
+		}	
 	}
+	
+	
 	
 //	public Ball<T> first = null;
 //	
