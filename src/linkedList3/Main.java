@@ -13,6 +13,9 @@ public class Main {
 		computerNetwork.printAll();
 		
 		System.out.println("123 모델 컴퓨터가 있으면 서버이름은 "+computerNetwork.search(123).server +"이다.");
+		
+		computerNetwork.setBetween(357, 456);
+		computerNetwork.printAll();
 		 
 		
 		

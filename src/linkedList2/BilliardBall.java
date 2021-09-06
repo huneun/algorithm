@@ -132,13 +132,6 @@ public class BilliardBall<T> {
 //		}
 //	}
 //	
-//	public boolean delBall(T isNumber) {
-//		if(this.first == null) {
-//			return false;
-//		}else {
-//			Ball<T> ball = this.first;
-//			
-//		}
-//	}
+
 
 }
