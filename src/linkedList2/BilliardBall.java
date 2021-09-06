@@ -48,6 +48,25 @@ public class BilliardBall<T> {
 		}	
 	}
 	
+//	public House search(T color) {
+//		if(first == null) {
+//			return null;
+//		}else {
+//			House<T> house = first;
+//			while(house != null) {
+//				if(house.color == color) {
+//					return house;
+//				}else {
+//					house = house.address;
+//				}
+//			}
+//			return null;
+//			
+//		}
+//		
+//	}
+//	
+	
 	
 	
 //	public Ball<T> first = null;
