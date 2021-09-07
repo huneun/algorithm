@@ -43,7 +43,7 @@ public class LinkedList<T> {
 			Phone<T> phone = this.first;
 			T a = phone.model;
 			while(phone != null) {
-				if(phone.model == model ) {
+				if(phone.model.toString().equals(model.toString()) ) {
 					return phone;
 				}else {
 					phone = phone.makingNumber;
