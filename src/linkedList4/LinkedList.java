@@ -42,8 +42,8 @@ public class LinkedList<T> {
 		}else {
 			Phone<T> phone = this.first;
 			T a = phone.model;
-			while(phone.makingNumber != null) {
-				if(phone.model==model ) {
+			while(phone != null) {
+				if(phone.model == model ) {
 					return phone;
 				}else {
 					phone = phone.makingNumber;
@@ -58,9 +58,11 @@ public class LinkedList<T> {
 		Phone<T> searchedPhone = this.search(oldModel);
 		
 		if(searchedPhone != null) {
-			Phone<T> phone = searchedPhone;
-			phone.makingNumber = new Phone<T>(model);
-			phone.makingNumber.makingNumber = phone;
+			Phone<T> phone = searchedPhone.makingNumber;
+			searchedPhone.makingNumber = new Phone<T>(model);
+			searchedPhone.makingNumber.makingNumber = phone;
+		}else {
+			this.addPhone(model);
 		}
 		
 	}
