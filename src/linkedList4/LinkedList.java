@@ -64,7 +64,6 @@ public class LinkedList<T> {
 		}else {
 			this.addPhone(model);
 		}
-		
 	}
 
 }
