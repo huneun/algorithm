@@ -17,7 +17,7 @@ public class Main {
 	//1. hash table 클래스 만들기
 	//2. 초간단 해쉬함수 만들기
 	//3. 해쉬테이블 클래스에 데이터 저장 메서드 추가
-
+	//4. main에서 실행해보기
 	
 	public static class MyHash {
 		public Slot[] hashTable;
